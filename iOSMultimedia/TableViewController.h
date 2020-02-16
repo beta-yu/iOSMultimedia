@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  iOSMultimedia
 //
 //  Created by qiyu on 2020/2/11.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UINavigationController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface TableViewController : UITableViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

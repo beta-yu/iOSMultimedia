@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,19 @@
 		7B07B9D823F2507D000A0A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B07B9D723F2507D000A0A16 /* Assets.xcassets */; };
 		7B07B9DB23F2507D000A0A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B07B9D923F2507D000A0A16 /* LaunchScreen.storyboard */; };
 		7B07B9DE23F2507D000A0A16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B9DD23F2507D000A0A16 /* main.m */; };
+		7B07B9E623F2514B000A0A16 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B9E523F2514B000A0A16 /* TableViewController.m */; };
+		7B07B9E823F254A2000A0A16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07B9E723F254A2000A0A16 /* AudioToolbox.framework */; };
+		7B07B9EC23F6855A000A0A16 /* PlaySoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B9EB23F6855A000A0A16 /* PlaySoundViewController.m */; };
+		7B07B9EE23F68CE2000A0A16 /* Cartoon Flute Broken.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B07B9ED23F68CE2000A0A16 /* Cartoon Flute Broken.wav */; };
+		7B07B9F223F69541000A0A16 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B9F123F69541000A0A16 /* MusicPlayerViewController.m */; };
+		7B07B9FC23F6B5ED000A0A16 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07B9FB23F6B5ED000A0A16 /* AVFoundation.framework */; };
+		7B07B9FF23F7B4AE000A0A16 /* Timofiy_Starenkov_-_The_Journey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B07B9FE23F7B4AE000A0A16 /* Timofiy_Starenkov_-_The_Journey.mp3 */; };
+		FA9102C7AD8B23CC5A65E848 /* Pods_iOSMultimedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065714CB90DE52569CF371FA /* Pods_iOSMultimedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		065714CB90DE52569CF371FA /* Pods_iOSMultimedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMultimedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67176CA3FC0B5AED6B0D138A /* Pods-iOSMultimedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMultimedia.release.xcconfig"; path = "Target Support Files/Pods-iOSMultimedia/Pods-iOSMultimedia.release.xcconfig"; sourceTree = "<group>"; };
 		7B07B9C823F2507C000A0A16 /* iOSMultimedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMultimedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B07B9CB23F2507C000A0A16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7B07B9CC23F2507C000A0A16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +39,18 @@
 		7B07B9DA23F2507D000A0A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B07B9DC23F2507D000A0A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B07B9DD23F2507D000A0A16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B07B9E423F2514B000A0A16 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		7B07B9E523F2514B000A0A16 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		7B07B9E723F254A2000A0A16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7B07B9EA23F6855A000A0A16 /* PlaySoundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaySoundViewController.h; sourceTree = "<group>"; };
+		7B07B9EB23F6855A000A0A16 /* PlaySoundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaySoundViewController.m; sourceTree = "<group>"; };
+		7B07B9ED23F68CE2000A0A16 /* Cartoon Flute Broken.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Cartoon Flute Broken.wav"; sourceTree = "<group>"; };
+		7B07B9F023F69541000A0A16 /* MusicPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicPlayerViewController.h; sourceTree = "<group>"; };
+		7B07B9F123F69541000A0A16 /* MusicPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerViewController.m; sourceTree = "<group>"; };
+		7B07B9FB23F6B5ED000A0A16 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7B07B9FD23F6FE13000A0A16 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		7B07B9FE23F7B4AE000A0A16 /* Timofiy_Starenkov_-_The_Journey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Timofiy_Starenkov_-_The_Journey.mp3"; sourceTree = "<group>"; };
+		AF0E147E0774950588DE2D8C /* Pods-iOSMultimedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMultimedia.debug.xcconfig"; path = "Target Support Files/Pods-iOSMultimedia/Pods-iOSMultimedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +58,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9102C7AD8B23CC5A65E848 /* Pods_iOSMultimedia.framework in Frameworks */,
+				7B07B9E823F254A2000A0A16 /* AudioToolbox.framework in Frameworks */,
+				7B07B9FC23F6B5ED000A0A16 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052C62D8D62BD5E613CBFD97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF0E147E0774950588DE2D8C /* Pods-iOSMultimedia.debug.xcconfig */,
+				67176CA3FC0B5AED6B0D138A /* Pods-iOSMultimedia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		24C21B1988E1E46D0F36779B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B9FB23F6B5ED000A0A16 /* AVFoundation.framework */,
+				7B07B9E723F254A2000A0A16 /* AudioToolbox.framework */,
+				065714CB90DE52569CF371FA /* Pods_iOSMultimedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B07B9BF23F2507B000A0A16 = {
 			isa = PBXGroup;
 			children = (
 				7B07B9CA23F2507C000A0A16 /* iOSMultimedia */,
 				7B07B9C923F2507C000A0A16 /* Products */,
+				052C62D8D62BD5E613CBFD97 /* Pods */,
+				24C21B1988E1E46D0F36779B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +107,8 @@
 		7B07B9CA23F2507C000A0A16 /* iOSMultimedia */ = {
 			isa = PBXGroup;
 			children = (
+				7B07B9EF23F69513000A0A16 /* MusicPlayer */,
+				7B07B9E923F68537000A0A16 /* PlaySound */,
 				7B07B9CB23F2507C000A0A16 /* AppDelegate.h */,
 				7B07B9CC23F2507C000A0A16 /* AppDelegate.m */,
 				7B07B9CE23F2507C000A0A16 /* SceneDelegate.h */,
@@ -72,8 +120,39 @@
 				7B07B9D923F2507D000A0A16 /* LaunchScreen.storyboard */,
 				7B07B9DC23F2507D000A0A16 /* Info.plist */,
 				7B07B9DD23F2507D000A0A16 /* main.m */,
+				7B07B9E423F2514B000A0A16 /* TableViewController.h */,
+				7B07B9E523F2514B000A0A16 /* TableViewController.m */,
+				7B07B9F823F6B423000A0A16 /* SoundAndMusic */,
+				7B07B9FD23F6FE13000A0A16 /* Common.h */,
 			);
 			path = iOSMultimedia;
+			sourceTree = "<group>";
+		};
+		7B07B9E923F68537000A0A16 /* PlaySound */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B9EA23F6855A000A0A16 /* PlaySoundViewController.h */,
+				7B07B9EB23F6855A000A0A16 /* PlaySoundViewController.m */,
+			);
+			path = PlaySound;
+			sourceTree = "<group>";
+		};
+		7B07B9EF23F69513000A0A16 /* MusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B9F023F69541000A0A16 /* MusicPlayerViewController.h */,
+				7B07B9F123F69541000A0A16 /* MusicPlayerViewController.m */,
+			);
+			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		7B07B9F823F6B423000A0A16 /* SoundAndMusic */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B9ED23F68CE2000A0A16 /* Cartoon Flute Broken.wav */,
+				7B07B9FE23F7B4AE000A0A16 /* Timofiy_Starenkov_-_The_Journey.mp3 */,
+			);
+			path = SoundAndMusic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B07B9E123F2507D000A0A16 /* Build configuration list for PBXNativeTarget "iOSMultimedia" */;
 			buildPhases = (
+				33EF15E3F9851A7826002A1B /* [CP] Check Pods Manifest.lock */,
 				7B07B9C423F2507B000A0A16 /* Sources */,
 				7B07B9C523F2507B000A0A16 /* Frameworks */,
 				7B07B9C623F2507B000A0A16 /* Resources */,
+				5E627C0B11D50F47B81366B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,20 +216,67 @@
 			files = (
 				7B07B9DB23F2507D000A0A16 /* LaunchScreen.storyboard in Resources */,
 				7B07B9D823F2507D000A0A16 /* Assets.xcassets in Resources */,
+				7B07B9FF23F7B4AE000A0A16 /* Timofiy_Starenkov_-_The_Journey.mp3 in Resources */,
 				7B07B9D623F2507C000A0A16 /* Main.storyboard in Resources */,
+				7B07B9EE23F68CE2000A0A16 /* Cartoon Flute Broken.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33EF15E3F9851A7826002A1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSMultimedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E627C0B11D50F47B81366B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMultimedia/Pods-iOSMultimedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMultimedia/Pods-iOSMultimedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSMultimedia/Pods-iOSMultimedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B07B9C423F2507B000A0A16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B07B9F223F69541000A0A16 /* MusicPlayerViewController.m in Sources */,
 				7B07B9D323F2507C000A0A16 /* ViewController.m in Sources */,
 				7B07B9CD23F2507C000A0A16 /* AppDelegate.m in Sources */,
+				7B07B9EC23F6855A000A0A16 /* PlaySoundViewController.m in Sources */,
 				7B07B9DE23F2507D000A0A16 /* main.m in Sources */,
+				7B07B9E623F2514B000A0A16 /* TableViewController.m in Sources */,
 				7B07B9D023F2507C000A0A16 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +415,7 @@
 		};
 		7B07B9E223F2507D000A0A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0E147E0774950588DE2D8C /* Pods-iOSMultimedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +433,7 @@
 		};
 		7B07B9E323F2507D000A0A16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67176CA3FC0B5AED6B0D138A /* Pods-iOSMultimedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
