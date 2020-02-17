@@ -171,12 +171,13 @@
     AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:url];
     [self.onlinePlayerItems addObject:item];
     
-    self.onlineMusicPlayer = [AVPlayer playerWithPlayerItem:item];
+    self.onlineMusicPlayer = [[AVPlayer alloc] initWithPlayerItem:item];
     
     [self.onlineMusicPlayer play];
     
-//    NSLog(@"%@", self.onlineMusicPlayer.error);
-    [self doSomeWorkWithOnlineMusicPlayWithIndex:0];
+//    [item addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+    [item addObserver:self forKeyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew context:nil];
+//    [self doSomeWorkWithOnlineMusicPlayWithIndex:0];
 }
 
 - (void)doSomeWorkWithOnlineMusicPlayWithIndex:(NSInteger)index {
@@ -188,6 +189,35 @@
     [NSTimer scheduledTimerWithTimeInterval:0.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
         self.progressSlider.value += 0.5;
     }];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"status"]) {
+        switch (self.onlineMusicPlayer.status) {
+            case AVPlayerStatusUnknown:
+                NSLog(@"未知状态。");
+                break;
+                
+            case AVPlayerStatusReadyToPlay:
+                NSLog(@"ready to play.");
+                break;
+                
+            case AVPlayerStatusFailed: {
+                NSLog(@"Failed.");
+                NSLog(@"%@", self.onlineMusicPlayer.error);
+                break;
+            }
+                
+            default:
+                break;
+        }
+    } else if ([keyPath isEqualToString:@"loadedTimeRanges"]) {
+        AVPlayerItem *item = object;
+        NSArray *array = item.loadedTimeRanges;
+        CMTimeRange timeRange = [array.firstObject CMTimeRangeValue];
+        NSTimeInterval totalBuffer = CMTimeGetSeconds(timeRange.start) + CMTimeGetSeconds(timeRange.duration);
+        NSLog(@"共缓冲了%.2f", totalBuffer);
+    }
 }
 
 @end

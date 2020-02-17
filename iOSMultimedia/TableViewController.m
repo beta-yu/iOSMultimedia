@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "PlaySoundViewController.h"
 #import "MusicPlayerViewController.h"
+#import "VideoPlayerTableViewController.h"
 #import "Common.h"
 
 @interface TableViewController ()
@@ -24,7 +25,7 @@
     self.title = @"iOS Multimedia";
     self.view.backgroundColor = mRGBColor(244, 245, 245);
     
-    self.titles = @[@"Play sound", @"Music Player"];
+    self.titles = @[@"Play sound", @"Music Player", @"Video Player"];
 }
 
 #pragma mark - Table view data source
@@ -59,6 +60,11 @@
         case 1: {
             MusicPlayerViewController *musicPlayerVC = [[MusicPlayerViewController alloc] init];
             [self.navigationController pushViewController:musicPlayerVC animated:YES];
+            break;
+        }
+        case 2: {
+            VideoPlayerTableViewController *videoPlayerTabelVC = [[VideoPlayerTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+            [self.navigationController pushViewController:videoPlayerTabelVC animated:YES];
             break;
         }
         default:
